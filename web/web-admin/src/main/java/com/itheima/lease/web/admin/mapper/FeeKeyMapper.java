@@ -3,6 +3,9 @@ package com.itheima.lease.web.admin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.itheima.lease.model.entity.FeeKey;
+import com.itheima.lease.web.admin.vo.fee.FeeKeyVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -12,6 +15,7 @@ import com.itheima.lease.model.entity.FeeKey;
 */
 public interface FeeKeyMapper extends BaseMapper<FeeKey> {
 
+    List<FeeKeyVo> listFeeInfo();
 }
 
 
