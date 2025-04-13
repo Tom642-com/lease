@@ -2,6 +2,7 @@ package com.itheima.lease.web.admin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.itheima.lease.model.entity.AttrKey;
+import com.itheima.lease.web.admin.vo.attr.AttrKeyVo;
 
 import java.util.List;
 
@@ -12,4 +13,9 @@ import java.util.List;
 */
 public interface AttrKeyService extends IService<AttrKey> {
 
+    /**
+     * 查询全部属性名称和属性值列表
+     * @return
+     */
+    List<AttrKeyVo> listAttrInfo();
 }
